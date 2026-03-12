@@ -1,0 +1,290 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0px;
+}
+
+.site-header {
+  overflow: hidden; /* Recommended for float layouts */
+  background-color: #fbfbfb; /* Add a background color */
+  padding: 10px 10px; /* Add some internal spacing */
+  display: flex; /* Use flexbox for easy alignment */
+  justify-content: space-between;/* Pushes logo to left, nav to right */
+  align-items: center; /* Vertically centers the items */
+  box-shadow: 1px 1px 1px;
+}
+
+/* Style the links inside the header */
+.site-header a {
+  color: black;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 12px;
+  text-decoration: none; /* Remove default underline from links */
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header-title-logo::after {
+    content: "Website Name";
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.site-logo {
+    margin-right: 5px; /* Reduces space to the right of the logo */
+}
+.site-branding {
+    display: flex;
+    align-items: center; /* Centers logo and text vertically */
+    gap: 10px; /* Controls the space between logo and text */
+}
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+/* Style the logo */
+.site-header .logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+header{
+    background-color: rgb(152, 160, 222);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    backface-visibility: 50%;
+}
+.site-header {
+  /* other styles... */
+  position: fixed; /* or 'sticky' */
+  top: 0; /* Positions the header at the top of the viewport */
+  width: 100%; /* Ensures the header spans the full width */
+  z-index: 999; /* Ensures the header stays on top of other content */
+}
+
+/* Add margin to the body to prevent content from hiding behind the sticky header */
+body {
+  margin-top: 100px; /* Adjust this value to match your header's height */
+}
+
+.button {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+           
+}
+
+.button {
+  background-color: #05890c; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Space between text and border */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Text size */
+  cursor: pointer; /* Change mouse cursor to a hand on hover */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline for <a> elements used as buttons */
+  display: inline-block; /* Allows padding and margin on anchor tags */
+}
+
+.button:hover {
+  background-color: #035f21; /* Darker background on hover */
+    
+}
+
+#fb:active{
+    transform: translateY(2px); /* Slight movement down to simulate being pressed */
+  box-shadow: none; /* Remove shadow when pressed */
+    
+}
+
+article{
+    background-color:azure;
+    box-shadow: 3px 3px 5px;
+}
+#fb{
+    float:left;
+    margin-right:10px;
+}
+
+#globe{
+    float:right;
+    margin-left: 10px;
+}
+
+#it{
+    float:left;
+    margin-right: 10px;
+}
+
+.button:active {
+  transform: translateY(1px); /* Slight movement down to simulate being pressed */
+  box-shadow: none; /* Remove shadow when pressed */
+}
+
+.button:focus {
+  outline: 2px solid #036323; /* Visible outline for keyboard users */
+  outline-offset: 2px;
+}
+aside{
+    background-color: antiquewhite;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px;
+}
+
+#app{
+    float: right;
+}
+
+
+aside{
+    width:20%;
+    height:20%;
+    float:left;
+    padding:10px;
+}
+
+section{
+    width:40%;
+    float:left;
+    padding:10px;
+}
+article{
+    width:40%;
+    float:left;
+    padding:20px;
+}
+
+.hire {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+           
+}
+
+.hire {
+  background-color: #5490e3; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Space between text and border */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Text size */
+  cursor: pointer; /* Change mouse cursor to a hand on hover */
+  text-decoration: none; /* Remove underline for <a> elements used as buttons */
+  display: inline-block; /* Allows padding and margin on anchor tags */
+}
+
+.hire:hover {
+  background-color: #32008a; /* Darker background on hover */
+    
+}
+
+.hire:active{
+    transform: translateY(2px); /* Slight movement down to simulate being pressed */
+  box-shadow: none; /* Remove shadow when pressed */
+}
+footer{
+    display:block;
+    clear:both;
+    background-color:gray;
+    text-align:center;
+    padding:25px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+footer {
+    box-shadow: -1px -1px 3px;
+    margin-bottom: 0px; 
+    padding: 30px; /* Adds space inside the footer */
+    background-color: #e4e4e4; /* Sets a light grey background color */
+    color: #313131; /* Sets the text color */
+    display: flex;
+    height: 150px;
+    width:100%;
+
+    bottom: 0px;
+    font-size: 15px; /* Adjusts the font size */
+    width: 100%; /* Ensures the footer spans the full width */
+}
+.tc{
+    float: right;
+}
+
+#fc{
+    text-align: left;
+    padding: 10px;
+    display:block; 
+
+}
+
+#fc2{
+    text-align: left;
+    padding: 10px;
+    display: block;
+}
+footer a {
+    text-decoration: none; /* Removes the default link underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+.design{
+    background-color: rgb(69, 68, 68);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+#li{
+    float: left;
+    margin-right: 10px;
+}
+
+#fc5{
+    display: flexbox;
+    float: right;
+    align-items: center;
+}
+.design{
+    color:white;
+}
+.designer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity:0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400px;
+    margin: 0px 5px;
+}
+
+@media screen and(max-width:600px){
+    aside,section,article{
+        width:100%;
+    }
+}
